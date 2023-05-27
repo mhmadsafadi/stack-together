@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 1000px;
+  overflow-x: hidden;
+}
+.my-btn:hover {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #ffb34b 0deg,
+    #1c4a5a 63.36deg,
+    #56d3d2 154.55deg,
+    #e7fc6a 202.64deg,
+    #ffcbf4 284.45deg,
+    #ffb34b 360deg
+  ) !important;
+}
+
+@layer components {
+  .social-media a {
+    @apply bg-main flex items-center justify-center w-10 h-10 rounded-full transition-all shadow-lg hover:-translate-y-2 hover:shadow-purple/50 hover:bg-purple;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #8b80f9;
+  border-radius: 50px;
+}

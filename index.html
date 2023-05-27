@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Stack Together</title>
+</head>
+
+<body class="bg-body mx-2">
+    
+    <nav class="fixed top-0 left-0 right-0 bg-body z-10 container mx-auto px-2 py-4 flex items-center justify-between">
+        <img src="images/logo.svg" alt="Stack Together" class="w-36">
+
+        <div class="hidden md:flex items-center gap-7">
+            <nav class="flex items-center gap-5">
+                <a href="#" class="text-main font-semibold hover:text-purple">Features</a>
+                <a href="#" class="text-main font-semibold hover:text-purple">About</a>
+                <a href="#" class="text-main font-semibold hover:text-purple">Download</a>
+            </nav>
+            <button class="rounded-full px-6 py-2 text-main font-semibold bg-main/[0.2] hover:bg-purple hover:text-white transition ease-in-out">Join Waitlist</button>
+        </div>
+
+        <div id="mobile-menu" class="backdrop-blur-md bg-purple/70 p-5 fixed top-16 left-0 right-0 rounded-xl hidden md:hidden flex-col shadow-xl shadow-purple/[0.3]">
+            <nav class="flex items-center gap-5 flex-col">
+                <a href="#" class="text-white font-semibold hover:text-purple">Features</a>
+                <a href="#" class="text-white font-semibold hover:text-purple">About</a>
+                <a href="#" class="text-white font-semibold hover:text-purple">Download</a>
+            </nav>
+            <button class="rounded-full mt-5 w-full px-6 py-2 text-main font-semibold bg-white/[0.8] hover:bg-purple hover:text-white transition ease-in-out">Join Waitlist</button>
+        </div>
+        
+        <button id="hamburger-menu" class="flex md:hidden" onclick="toggleMobileMenu()">
+            <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 block">
+                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+            </svg>
+            <svg id="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>                             
+        </button>
+    </nav> 
+
+    <header class="sm:mt-36 mt-28 text-center py-5">
+        <h1 class="max-w-xl mx-auto text-main text-3xl sm:text-5xl font-bold mb-3" data-aos="fade-up" data-aos-delay="80">
+            Where Love Blossoms <br>
+            and Memories Flourish!
+        </h1>
+        <p class="text-purple text-2xl font-semibold mb-3" data-aos="zoom-out-up" data-aos-delay="100">A one-of-a-kind couples app</p>
+        <p class="max-w-5xl mx-auto text-black font-normal sm:font-semibold mb-8" data-aos="zoom-in" data-aos-delay="300">
+            A place where partners can cultivate their love and nurture precious memories together. Immerse yourself in a delightful journey of sharing favorite images, heartfelt posts, cherished places, and unforgettable moments. Be a part of StackTogether and let your love story unfold
+        </p>
+        <form class="max-w-lg mx-auto" data-aos="zoom-in-up" data-aos-delay="450">   
+            <div class="relative">
+                <input type="text" class="block w-full p-4 text-base border border-[#E0E0E0] rounded-full bg-white outline-none focus:ring-2 focus:ring-purple focus:border-purple" placeholder="Enter your email" required>
+                <button type="submit" class="my-btn text-white absolute right-2.5 top-2 bottom-2 bg-main font-medium rounded-full text-sm px-6 py-2">Join Waitlist</button>
+            </div>
+        </form>
+    </header>
+    
+
+    <section class="container mx-auto my-10 relative">
+        <img src="images/heart.svg" class="mx-auto w-full hidden xl:block" draggable="false">
+
+        <div class="xl:absolute xl:inset-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center my-auto">
+
+                <div data-aos="fade-down-right" data-aos-delay="400">
+                    <div class="relative p-4 bg-red rounded-2xl shadow-2xl shadow-red-dark/[.4] h-max xl:-translate-x-10 xl:scale-90">
+                        <span class="absolute top-0 left-0 bg-red rounded-full p-4">
+                            <img src="images/image.svg" class="w-7 h-7">
+                        </span>
+                        <img src="images/img-1.svg" class="rounded-xl w-full">
+                        <h1 class="text-red-dark font-semibold mt-2">Abby Birthday</h1>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-down" data-aos-delay="450">
+                    <div class="relative p-4 bg-yellow rounded-2xl shadow-2xl shadow-yellow-dark/[.4] h-max xl:-translate-y-10">
+                        <span class="absolute top-0 left-0 bg-yellow rounded-full p-4">
+                            <img src="images/link-yellow.svg" class="w-7 h-7">
+                        </span>
+                        <div class="flex gap-3">
+                            <img src="images/img-2.svg" class="rounded-xl w-40">
+                            <div>
+                                <h1 class="text-yellow-dark text-lg font-semibold leading-6 mb-2">The 19 Romantic Destinations to Honeymoon in 2022</h1>
+                                <a href="#" class="bg-yellow-dark/[0.1] text-yellow-dark p-2 rounded-lg text-xs">https://www.bridestory.com/...</a>
+                            </div>
+                        </div>
+                        <p class="text-yellow-dark text-sm font-semibold mt-2 line-clamp-2">You've made it official–and now it's time to unwind. Whether you're the type of couple that wants to explore a once-in-a-lifetime destination, experience otherworldly food and architecture, or simply veg out on one of the world's most beautiful beaches, we've got you covered.</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-down-left" data-aos-delay="500">
+                    <div class="relative p-4 bg-green rounded-2xl shadow-2xl shadow-green-dark/[.4] h-max xl:translate-x-10">
+                        <span class="absolute top-0 left-0 bg-green rounded-full p-4">
+                            <img src="images/link-green.svg" class="w-7 h-7">
+                        </span>
+                        <img src="images/img-3.svg" class="rounded-xl w-full">
+                        <h1 class="text-green-dark font-semibold mt-2">Dress Inspiration</h1>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-right" data-aos-delay="50">
+                    <div class="relative p-4 bg-blue rounded-2xl shadow-2xl shadow-blue-dark/[.4] h-max xl:-translate-x-20">
+                        <span class="absolute top-0 left-0 bg-blue rounded-full p-4">
+                            <img src="images/video.svg" class="w-7 h-7">
+                        </span>
+                        <img src="images/img-4.svg" class="rounded-xl w-full">
+                        <h1 class="text-blue-dark font-semibold mt-2">Iceland Vlog</h1>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-down" data-aos-delay="150">
+                    <div class="relative p-4 bg-purple rounded-2xl shadow-2xl shadow-purple-dark/[.4] h-max xl:-translate-y-24 xl:scale-125">
+                        <span class="absolute top-0 left-0 bg-purple rounded-full p-4">
+                            <img src="images/list.svg" class="w-7 h-7">
+                        </span>
+                        <img src="images/img-5.svg" class="rounded-xl w-full">
+                        <h1 class="text-purple-light font-semibold mt-2">Wedding Planner</h1>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-left" data-aos-delay="200">
+                    <div class="relative p-4 bg-blue rounded-2xl shadow-2xl shadow-blue-dark/[.4] h-max xl:translate-x-20">
+                        <span class="absolute top-0 left-0 bg-blue rounded-full p-4">
+                            <img src="images/location.svg" class="w-7 h-7">
+                        </span>
+                        <img src="images/img-6.svg" class="rounded-xl w-full">
+                        <h1 class="text-blue-dark font-semibold mt-2">Favourite Restaurant</h1>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up-right" data-aos-delay="50">
+                    <div class="relative p-4 bg-orange rounded-2xl shadow-2xl shadow-orange-dark/[.4] h-max xl:-translate-y-10">
+                        <span class="absolute top-0 left-0 bg-orange rounded-full p-4">
+                            <img src="images/link-orange.svg" class="w-7 h-7">
+                        </span>
+                        <div class="flex gap-3">
+                            <img src="images/img-7.svg" class="rounded-xl w-40">
+                            <div>
+                                <h1 class="text-orange-dark text-lg font-semibold leading-6 mb-2">THE 56 MOST ANTICIPATED MOVIES OF 2023</h1>
+                                <a href="#" class="bg-orange-dark/[0.1] text-orange-dark p-2 rounded-lg text-xs">https://www.bridestory.com/...</a>
+                            </div>
+                        </div>
+                        <p class="text-orange-dark text-sm font-semibold mt-2 line-clamp-2">The year boasts a wealth of superhero titles, plenty of explosive action, some spine-tingling horror, and even a few throwbacks to franchises of old, so start marking your calendars.</p>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-in-up" data-aos-delay="150">
+                    <div class="relative p-4 bg-green rounded-2xl shadow-2xl shadow-green-dark/[.4] h-max">
+                        <span class="absolute top-0 left-0 bg-green rounded-full p-4">
+                            <img src="images/music.svg" class="w-7 h-7">
+                        </span>
+                        <img src="images/img-8.svg" class="rounded-xl w-full">
+                        <h1 class="text-green-dark font-semibold mt-2">Wedding Playlist</h1>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up-left" data-aos-delay="250">
+                    <div class="relative p-4 bg-red rounded-2xl shadow-2xl shadow-red-dark/[.4] h-max xl:-translate-y-10">
+                        <span class="absolute top-0 left-0 bg-red rounded-full p-4">
+                            <img src="images/bag.svg" class="w-7 h-7">
+                        </span>
+                        <div class="flex gap-3">
+                            <img src="images/img-9.svg" class="rounded-xl w-32">
+                            <div>
+                                <h1 class="text-red-dark text-lg font-semibold leading-6 mb-2">Personalized Compact Swivel Cheese Board</h1>
+                                <a href="#" class="bg-red-dark/[0.1] text-red-dark p-2 rounded-lg text-xs">https://www.bridestory.com/...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="flex items-center justify-center gap-4 my-20 lg:my-32" data-aos="flip-up">
+        <button class="border border-black rounded-md transition ease-linear hover:-translate-y-3 hover:shadow-2xl hover:shadow-black/[.5]">
+            <img src="images/app-store.svg" alt="App Store">
+        </button>
+        <button class="border border-black rounded-md transition ease-linear hover:-translate-y-3 hover:shadow-2xl hover:shadow-black/[.5]">
+            <img src="images/google-play.svg" alt="Google Play">
+        </button>
+    </div>
+      
+
+    <footer class="container mx-auto mt-28">
+        <div class="flex items-center justify-between flex-col gap-5 md:flex-row">
+            <img src="images/logo.svg" alt="Stack Together" class="w-32" data-aos="flip-up">
+            <nav class="flex items-center gap-7">
+                <a href="#" class="text-black font-semibold hover:text-main hover:underline" data-aos="fade-right" data-aos-delay="50">About</a>
+                <a href="#" class="text-black font-semibold hover:text-main hover:underline" data-aos="fade-right" data-aos-delay="100">Blog</a>
+                <a href="#" class="text-black font-semibold hover:text-main hover:underline" data-aos="fade-right" data-aos-delay="150">Download</a>
+                <a href="#" class="text-black font-semibold hover:text-main hover:underline" data-aos="fade-right" data-aos-delay="200">Contact Us</a>
+            </nav>
+            <div class="social-media flex items-center gap-5">
+                <a href="#" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/facebook.svg">
+                </a>
+                <a href="#" data-aos="fade-up" data-aos-delay="150">
+                    <img src="images/instagram.svg">
+                </a>
+                <a href="#" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/twitter.svg">
+                </a>
+            </div>
+        </div>
+
+        <hr class="my-8 border-purple">
+
+        <div class="flex items-center justify-between flex-col gap-5 md:flex-row pb-10">
+            <nav class="flex items-center gap-7">
+                <a href="#" class="text-black hover:text-main underline text-sm sm:text-base">Privacy Policy</a>
+                <a href="#" class="text-black hover:text-main underline text-sm sm:text-base">Terms of Service</a>
+                <a href="#" class="text-black hover:text-main underline text-sm sm:text-base">Cookies Settings</a>
+            </nav>
+            <p class="text-black">2023 StackTogether. All right reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            disable: false,
+            once: true
+        })
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger');
+            const closeIcon = document.getElementById('close');
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
