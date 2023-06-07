@@ -15,18 +15,20 @@
     
     <nav class="fixed top-0 left-0 right-0 bg-body z-10 px-2 py-4">
         <div class="container mx-auto flex items-center justify-between">
-            <img src="images/logo.svg" alt="Stack Together" class="w-36">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Stack Together" class="w-32 sm:w-40" data-aos="flip-up">
+            </a>
 
             <div class="hidden md:flex items-center gap-7">
                 <nav class="flex items-center gap-5">
-                    <a href="#" class="text-main font-semibold hover:text-purple">Features</a>
-                    <a href="#" class="text-main font-semibold hover:text-purple">About</a>
-                    <a href="#" class="text-main font-semibold hover:text-purple">Download</a>
+                    <a href="#" class="text-main font-semibold hover:text-purple" data-aos="fade-right" data-aos-delay="50">Features</a>
+                    <a href="#" class="text-main font-semibold hover:text-purple" data-aos="fade-right" data-aos-delay="100">About</a>
+                    <a href="#" class="text-main font-semibold hover:text-purple" data-aos="fade-right" data-aos-delay="150">Download</a>
                 </nav>
-                <button class="rounded-full px-6 py-2 text-main font-semibold bg-main/[0.2] hover:bg-purple hover:text-white transition ease-in-out">Join Waitlist</button>
+                <button class="rounded-full px-6 py-2 transition ease-in-out text-main font-semibold bg-main/[0.2] hover:bg-purple hover:text-white" data-aos="fade-right" data-aos-delay="200">Join Waitlist</button>
             </div>
 
-            <div id="mobile-menu" class="backdrop-blur-md bg-purple/70 p-5 fixed top-16 left-2 right-2 rounded-xl hidden md:hidden flex-col shadow-xl shadow-purple/[0.3]">
+            <div id="mobile-menu" class="backdrop-blur-md bg-secondary/70 p-5 fixed top-16 left-2 right-2 rounded-xl hidden md:hidden flex-col shadow-xl shadow-secondary/[0.3]">
                 <nav class="flex items-center gap-5 flex-col">
                     <a href="#" class="text-white font-semibold hover:text-purple">Features</a>
                     <a href="#" class="text-white font-semibold hover:text-purple">About</a>
@@ -46,25 +48,25 @@
         </div>
     </nav> 
 
-    <header class="sm:mt-36 mt-28 text-center py-5">
-        <h1 class="max-w-xl mx-auto text-main text-3xl sm:text-5xl font-bold mb-3" data-aos="fade-up" data-aos-delay="80">
+    <header class="mt-20 sm:mt-36 text-center py-5">
+        <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-purple to-secondary max-w-xl mx-auto text-3xl sm:text-5xl font-extrabold mb-3" data-aos="fade-up" data-aos-delay="300">
             Where Love Blossoms <br>
             and Memories Flourish!
         </h1>
-        <p class="text-purple text-2xl font-semibold mb-3" data-aos="zoom-out-up" data-aos-delay="100">A one-of-a-kind couples app</p>
-        <p class="max-w-5xl mx-auto text-black font-normal sm:font-semibold mb-8" data-aos="zoom-in" data-aos-delay="300">
-            A place where partners can cultivate their love and nurture precious memories together. Immerse yourself in a delightful journey of sharing favorite images, heartfelt posts, cherished places, and unforgettable moments. Be a part of StackTogether and let your love story unfold
+        <p class="text-purple text-2xl font-semibold mb-3" data-aos="zoom-out-up" data-aos-delay="400">A one-of-a-kind couples app</p>
+        <p class="max-w-5xl mx-auto text-main font-normal sm:font-semibold mb-8" data-aos="zoom-in" data-aos-delay="500">
+            Stacks together is a place where partners can cultivate their love and nurture precious memories together. From planning a birthday party to your wedding, immerse yourself in a delightful journey of sharing favorite images, heartfelt posts, cherished places, and unforgettable moments. We want to be a small part of your grand love story.
         </p>
-        <form class="max-w-lg mx-auto" data-aos="zoom-in-up" data-aos-delay="450">   
+        <form class="max-w-lg mx-auto" data-aos="zoom-in-up" data-aos-delay="600">   
             <div class="relative">
-                <input type="text" class="block w-full p-4 text-base border border-[#E0E0E0] rounded-full bg-white outline-none focus:ring-2 focus:ring-purple focus:border-purple" placeholder="Enter your email" required>
-                <button type="submit" class="my-btn text-white absolute right-2.5 top-2 bottom-2 bg-main font-medium rounded-full text-sm px-6 py-2">Join Waitlist</button>
+                <input type="text" class="block w-full p-4 text-base transition-all ease-linear border border-[#E0E0E0] rounded-full bg-white outline-none focus:ring-2 focus:ring-purple focus:border-purple" placeholder="Enter your email" required>
+                <button type="submit" class="my-btn text-white absolute right-2.5 top-2 bottom-2 bg-gradient-to-l from-purple to-main font-medium rounded-full text-sm px-6 py-2">Join Waitlist</button>
             </div>
         </form>
     </header>
     
     <section class="container mx-auto my-10 relative">
-        <img src="images/heart.svg" class="mx-auto w-full hidden xl:block" draggable="false">
+        <img src="images/heart.svg" class="mx-auto w-full hidden xl:block" draggable="false" data-aos="fade-up" data-aos-delay="300">
 
         <div class="xl:absolute xl:inset-20">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center my-auto">
@@ -188,7 +190,6 @@
         </button>
     </div>
       
-
     <footer class="container mx-auto mt-28">
         <div class="flex items-center justify-between flex-col gap-5 md:flex-row">
             <img src="images/logo.svg" alt="Stack Together" class="w-32" data-aos="flip-up">
@@ -222,6 +223,7 @@
             <p class="text-black">2023 StackTogether. All right reserved.</p>
         </div>
     </footer>
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

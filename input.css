@@ -18,6 +18,16 @@ body {
   ) !important;
 }
 
+header{
+  background-image: radial-gradient(circle at 20% center, #69D9D8 -40%, transparent 10%), radial-gradient(circle at 80% center, #8B80F9 -40%, transparent 10%);
+}
+@media (width <= 768px) {
+  header{
+    background-image: unset
+  }
+}
+
+
 @layer components {
   .social-media a {
     @apply bg-main flex items-center justify-center w-10 h-10 rounded-full transition-all shadow-lg hover:-translate-y-2 hover:shadow-purple/50 hover:bg-purple;
